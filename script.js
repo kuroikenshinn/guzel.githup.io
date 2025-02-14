@@ -50,7 +50,28 @@ document.addEventListener('DOMContentLoaded', () => {
         socialMediaContent.classList.add('hidden');
     });
 
-
+    window.onload = function() {
+        let percent = 0;
+        let progressBar = document.getElementById("progress-bar");
+        let percentText = document.getElementById("percent");
+    
+        let interval = setInterval(function() {
+            percent += 2;  // İlerlemeyi artır
+            progressBar.style.width = percent + "%";
+            percentText.textContent = percent + "%";  // Yüzdeyi göster
+    
+            if (percent >= 100) {
+                clearInterval(interval);  // Yüzde %100'e ulaşınca interval'i durdur
+                setTimeout(function() {
+                    // Yükleme ekranını gizle ve içeriği göster
+                    document.getElementById("loader").style.display = "none";
+                    document.getElementById("content").style.display = "block";
+                }, 500);  // 0.5 saniye sonra içeriği göster
+            }
+        }, 50); // 50ms arayla %2 artırarak ilerleme sağla
+    };
+    
+    
     document.addEventListener('keydown', (event) => {
         if (event.key === 'ArrowRight') {
             currentTabIndex = (currentTabIndex + 1) % tabs.length;
