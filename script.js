@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const socialMediaLink = document.getElementById('social-media');
     const aboutMeContent = document.getElementById('about-me-content');
     const socialMediaContent = document.getElementById('social-media-content');
+    const projectsContent = document.getElementById('projects-content');
+    const projectsLink = document.getElementById('projects');
 
     function showTab(index) {
         tabs.forEach((tab, i) => {
@@ -31,13 +33,23 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         aboutMeContent.classList.toggle('hidden');
         socialMediaContent.classList.add('hidden');
+        projectsContent.classList.add('hidden');
     });
 
     socialMediaLink.addEventListener('click', (e) => {
         e.preventDefault();
         socialMediaContent.classList.toggle('hidden');
         aboutMeContent.classList.add('hidden');
+        projectsContent.classList.add('hidden');
     });
+    
+    projectsLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        projectsContent.classList.toggle('hidden');
+        aboutMeContent.classList.add('hidden');
+        socialMediaContent.classList.add('hidden');
+    });
+
 
     document.addEventListener('keydown', (event) => {
         if (event.key === 'ArrowRight') {
