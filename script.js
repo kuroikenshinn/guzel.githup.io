@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
             exitConfirmation.classList.remove('hidden');
         } else if (event.key === 'y' && currentTabIndex === 2) {
             const exitConfirmation = document.getElementById('exit-confirmation');
-            exitConfirmation.innerHTML = '<p>Çıkış yapılıyor... 3 saniye sonra kapanacak.</p>';
+            exitConfirmation.innerHTML = '<i><p>Logging out... Closing in 3 seconds.</p></i>';
             setTimeout(() => {
                 try {
                     window.close();
