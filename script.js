@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
             exitConfirmation.classList.remove('hidden');
         } else if (event.key === 'y' && currentTabIndex === 2) {
             const exitConfirmation = document.getElementById('exit-confirmation');
-            exitConfirmation.innerHTML = '<i><p>Logging out... Closing in 3 seconds.</p></i>';
+            exitConfirmation.innerHTML = '<p></i>Logging out... Closing in 3 seconds.</i></p>';
             setTimeout(() => {
                 try {
                     window.close();
