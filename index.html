@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="loader">
+        <div class="spinner"></div>
+        <p>Loading... <span id="percent">0%</span></p>
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+    </div>
+    <div id="content" style="display:none;">
+        <!-- Burada mevcut sayfanızın içeriği olacak 
+        <h1>Hoş Geldiniz!</h1>
+        <p>Site yüklendi.</p>-->
+    </div>
+        
     <div class="bios-container">
         <div class="tabs">
             <div id="information-tab" class="tab active">Information</div>
@@ -15,7 +28,7 @@
         </div>
         <div class="content">
             <div id="information-content" class="content-section">
-               <h3><p>hi i am KORKUT,</p></h3> 
+               <h2><p>hi i am KORKUT,</p></h2> 
                 <p>computer lover, engineer and developer.</p>
                 <div style="height: 22px;"></div>
                 <h5>
@@ -31,14 +44,14 @@
                     <li><a href="#" id="projects">Projects</a></li>
                 </ul>
                 <div id="about-me-content" class="hidden">
-                   <h4>
+                   <h3>
                         <i>
                             <p>Hello, I'm Korkut!</p>
                             <p>I am a Computer Engineering graduate.</p>
                             <p>I am interested in software development and technology.</p>
                             <p>This site is a platform where I share my personal projects and experiences.</p>
                         </i>
-                    </h4>
+                    </h3>
                 </div>
                 <div id="social-media-content" class="hidden">
                     <ul>
@@ -53,6 +66,10 @@
                         <li><a href="https://tr.linkedin.com/" target="_blank"><i>linkedin</i></a></li>
                     </ul>
                 </div>
+                <div id="content" style="display:none;">
+                    <!-- Burada mevcut sayfanızın içeriği olacak -->
+                     <p>deneme</p>
+                </div>                
             </div>
             <div id="exit-content" class="content-section hidden">
                 <p>Press Enter to exit.</p>
