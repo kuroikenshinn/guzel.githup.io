@@ -12,8 +12,8 @@ body {
 
 .bios-container {
     border: 2px solid rgb(0, 255, 0);
-    padding: 220px;
-    width: 180%;
+    padding: 20px;
+    width: 80%;
     max-width: 600px;
 }
 
