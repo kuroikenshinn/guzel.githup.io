@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>güzel.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bios-container">
+        <div class="tabs">
+            <div id="information-tab" class="tab active">Information</div>
+            <div id="main-tab" class="tab">Main</div>
+            <div id="exit-tab" class="tab">Exit</div>
+        </div>
+        <div class="content">
+            <div id="information-content" class="content-section">
+                <p>Yön tuşlarıyla sekmeler arasında geçiş yapabilirsiniz.</p>
+            </div>
+            <div id="main-content" class="content-section hidden">
+                <ul>
+                    <li><a href="#" id="about-me">Hakkımda</a></li>
+                    <li><a href="#" id="social-media">Sosyal Medyalarım</a></li>
+                    <li><a href="#">Projelerim</a></li>
+                </ul>
+                <div id="about-me-content" class="hidden">
+                    <p>Merhaba ben Korkut!</p>
+                    <p>Yazılım geliştirme ve teknoloji ile ilgileniyorum.</p>
+                    <p>Bu site benim kişisel projelerimi ve deneyimlerimi paylaştığım bir platformdur.</p>
+                </div>
+                <div id="social-media-content" class="hidden">
+                    <ul>
+                        <li><a href="https://x.com/birmegabit" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/leomessi/" target="_blank">Instagram</a></li>
+                        <li><a href="https://discord.com" target="_blank">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="exit-content" class="content-section hidden">
+                <p>Çıkış yapmak için Enter'a basın.</p>
+                <div id="exit-confirmation" class="hidden">
+                    <p>Çıkılsın mı? (Evet: Y, Hayır: N)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
